@@ -25,6 +25,7 @@ public class addDocummentInfoDataSerImpl extends UnicastRemoteObject implements 
 	@Override
 	public boolean addDocumentInfo(DocumentPO po) {
 		// TODO 自动生成的方法存根
+		po.getDoName();
 		return false;
 	}
 
