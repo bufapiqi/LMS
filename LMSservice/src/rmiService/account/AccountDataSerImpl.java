@@ -22,7 +22,6 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 	/**
 	 * 
 	 */
-	//a
 	private static final long serialVersionUID = -5539066964489916937L;
 
 	public AccountDataSerImpl() throws RemoteException {
