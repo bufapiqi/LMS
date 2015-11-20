@@ -22,7 +22,7 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 	/**
 	 * 
 	 */
-	
+	//a
 	private static final long serialVersionUID = -5539066964489916937L;
 
 	public AccountDataSerImpl() throws RemoteException {
@@ -38,7 +38,6 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			ResultSet resultSet=preparedStatement.executeQuery();
-			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
