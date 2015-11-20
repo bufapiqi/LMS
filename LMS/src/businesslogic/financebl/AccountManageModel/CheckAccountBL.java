@@ -17,6 +17,8 @@ public class CheckAccountBL implements GetAccountBlSer{
 	@Override
 	public ArrayList<AccountVO> getAccount() {
 		// TODO 自动生成的方法存根
+		
+		//555555
 		return null;
 	}
 
