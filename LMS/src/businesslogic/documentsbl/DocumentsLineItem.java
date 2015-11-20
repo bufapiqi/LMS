@@ -6,9 +6,9 @@ public class DocumentsLineItem{
 	double weight=0;
 	public DocumentsLineItem(String line, int type, double weight) {
 		super();
-		distance=mock.getDistance(line);
-		cost=mock.getCost(type);
-		this.weight = weight;
+//		distance=mock.getDistance(line);
+//		cost=mock.getCost(type);
+//		this.weight = weight;
 	}
 	public double getTotal(){
 		return distance*cost*weight;
