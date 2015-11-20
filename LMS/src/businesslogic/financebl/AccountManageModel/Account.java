@@ -4,7 +4,5 @@ package businesslogic.financebl.AccountManageModel;
 public class Account {
 
 //是地方撒发顺丰
-//123456
-//uiuiuiui
-//456456
+
 }
