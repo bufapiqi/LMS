@@ -2,24 +2,23 @@ package businesslogic.financebl.AccountManageModel;
 
 import java.util.ArrayList;
 
-import stub.financebl_stub.GetAccount_Stub;
 import vo.financeVO.AccountVO;
 
 public class AccountManageBL {
 	
 	
-	GetAccount_Stub check;
+
 	ArrayList<AccountVO> accountInf;
 	
 	public AccountManageBL(){
 		super();
-		check = new GetAccount_Stub();
+
 	}
 	
     //’Àªß–≈œ¢
 	public void CheckManage(){
 		
-		accountInf = check.getAccount();
+
 		
 	}
 	
