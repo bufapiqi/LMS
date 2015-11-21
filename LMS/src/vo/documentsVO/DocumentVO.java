@@ -1,7 +1,5 @@
 package vo.documentsVO;
 
-import java.io.Serializable;
-
 public class DocumentVO{
 	private String code;
 	private String doName;

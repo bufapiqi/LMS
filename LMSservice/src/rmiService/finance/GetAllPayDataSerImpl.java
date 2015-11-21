@@ -59,8 +59,8 @@ public class GetAllPayDataSerImpl extends UnicastRemoteObject implements GetAllP
 	public ArrayList<PaymentPO> getPay(String date) throws RemoteException {
 		// TODO 自动生成的方法存根
 		sql="SELECT * from 付款单 where datediff(d,start, date)>0";
-		
 		return null;
 	}
+
 	
 }

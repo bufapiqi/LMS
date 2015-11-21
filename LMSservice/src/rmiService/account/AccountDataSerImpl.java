@@ -31,7 +31,7 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 	@Override
 	public String campare(long ID, String password) {
 		// TODO 自动生成的方法存根
-		sql="SELECT ID, password,name,state  from 帐号 where ID="+ID+" and password ="+password;//确定帐号的信息
+		sql="SELECT state  from 帐号表 where ID="+ID+" and password="+password;//确定帐号的信息
 		try {
 			Class.forName(DRIVER);
 			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
@@ -56,24 +56,82 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 	@Override
 	public boolean insert(long ID, AccountInfoPO po) {
 		// TODO 自动生成的方法存根
-		return false;
+		sql="insert into 帐号表(ID,password,name,state,phone,sID,date) values ("+po.getID()+","+po.getPassword()+","+po.getName()+","+po.getState()+","+po.getPhone()+","+po.getsID()+","+po.getDate()+")";//确定帐号的信息
+		
+			try {
+				Class.forName(DRIVER);
+				Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
+				PreparedStatement preparedStatement=connection.prepareStatement(sql);	
+				return true;
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return false;
+		
 	}
 
 	@Override
 	public boolean update(long ID, AccountInfoPO po) {
 		// TODO 自动生成的方法存根
+		sql="update 帐号表 set password="+po.getPassword()+",name="+po.getName()+",state="+po.getState()+",phone="+po.getPhone()+",sID="+po.getsID()+",date="+po.getDate()+" where ID="+ID;//确定帐号的信息
+
+		try {
+			Class.forName(DRIVER);
+			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			return true;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return false;
 	}
 
 	@Override
 	public boolean delete(long ID) {
 		// TODO 自动生成的方法存根
+		sql="delete from 帐号表 where ID="+ID;//确定帐号的信息
+		try {
+			Class.forName(DRIVER);
+			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			return true;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 		return false;
 	}
 
 	@Override
 	public AccountInfoPO find(long ID) {
 		// TODO 自动生成的方法存根
+		sql="SELECT * from 帐号表 where ID="+ID;//确定帐号的信息
+		try {
+			Class.forName(DRIVER);
+			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			ResultSet resultSet=preparedStatement.executeQuery();
+			resultSet.next();
+			
+			return new AccountInfoPO(resultSet.getString(3), resultSet.getString(1), resultSet.getString(2), resultSet.getString(4),resultSet.getString(5) ,resultSet.getString(6), resultSet.getString(7));
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 		return null;
 	}
 
