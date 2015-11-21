@@ -2,6 +2,11 @@ package rmiService.finance;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import po.documentsPO.PaymentPO;
@@ -27,7 +32,23 @@ public class GetAllPayDataSerImpl extends UnicastRemoteObject implements GetAllP
 	@Override
 	public ArrayList<PaymentPO> getAllPay(String start, String end)  throws RemoteException{
 		// TODO 自动生成的方法存根
+		sql="SELECT * from 付款单 where datediff(d,start, date)>0";
 		
+		try {
+			Class.forName(DRIVER);
+			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			ResultSet resultSet=preparedStatement.executeQuery();
+			while(resultSet.next()){
+				resultSet.getString(1);
+			}
+		} catch (ClassNotFoundException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
 		return null;
 	}
 
