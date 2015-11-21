@@ -15,7 +15,7 @@ public interface GetAllPayDataSer extends Remote{
 	 * @author YangGuan
 	 *
 	 */
-	public ArrayList<PaymentPO> getPay(String selling,String date) throws RemoteException;
+	public ArrayList<PaymentPO> getPay(String date) throws RemoteException;
 	
 	
 	/**
@@ -24,5 +24,5 @@ public interface GetAllPayDataSer extends Remote{
 	 * @author YangGuan
 	 *
 	 */
-	public ArrayList<PaymentPO> getAllPay(String selling,String start, String end) throws RemoteException;
+	public ArrayList<PaymentPO> getAllPay(String start,String end) throws RemoteException;
 }

@@ -23,15 +23,18 @@ public class GetAllPayDataSerImpl extends UnicastRemoteObject implements GetAllP
 		// TODO 自动生成的构造函数存根
 	}
 
+
 	@Override
-	public ArrayList<PaymentPO> getPay(String selling, String date)  throws RemoteException{
+	public ArrayList<PaymentPO> getAllPay(String start, String end)  throws RemoteException{
 		// TODO 自动生成的方法存根
+		
 		return null;
 	}
 
+
+
 	@Override
-	public ArrayList<PaymentPO> getAllPay(String selling, String start,
-			String end)  throws RemoteException{
+	public ArrayList<PaymentPO> getPay(String date) throws RemoteException {
 		// TODO 自动生成的方法存根
 		return null;
 	}
