@@ -31,11 +31,7 @@ public class AccountDataSerImpl extends UnicastRemoteObject implements AccountDa
 	@Override
 	public String campare(long ID, String password) {
 		// TODO 自动生成的方法存根
-<<<<<<< HEAD
 		sql="SELECT ID, password,name,state  from 帐号 where ID="+ID+" and password ="+password;//确定帐号的信息
-=======
-		sql="SELECT ID, password,name,state  from 帐号 where ID="+ID+" and password="+password;//确定帐号的信息
->>>>>>> origin/master
 		try {
 			Class.forName(DRIVER);
 			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
