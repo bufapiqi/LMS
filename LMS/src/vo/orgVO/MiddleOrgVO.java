@@ -35,11 +35,11 @@ public class MiddleOrgVO {
 		this.bussinessHall = bussinessHall;
 		
 		for(AccountNumberVO vo:assisant){
-			vo.setState(3+"-"+city+"-中转中心");
+			vo.setState(3+"-"+city+"-中转中心"+"-"+codeNumber);
 		}
 		
 		for(AccountNumberVO vo:storger){
-			vo.setState(4+"-"+city+"-财务部");
+			vo.setState(4+"-"+city+"-中转中心"+"-"+codeNumber);
 		}
 	}
 
@@ -85,22 +85,22 @@ public class MiddleOrgVO {
 
 	public void addAssisant(AccountNumberVO vo){
 		this.assisant.add(vo);	
-		vo.setState(3+"-"+city+"-财务部");
+		vo.setState(3+"-"+city+"-中转中心"+"-"+codeNumber);
 	}
 	
 	public void removeAssisant( AccountNumberVO vo){
 	   this.assisant.remove(vo);
-	   vo.setState(null);
+	   vo.setState("0");
 	}
 	
 	public void addStorger(AccountNumberVO vo){
 		this.assisant.add(vo);	
-		vo.setState(4+"-"+city+"-财务部");
+		vo.setState(4+"-"+city+"-中转中心"+"-"+codeNumber);
 	}
 	
 	public void removeStorger( AccountNumberVO vo){
 	    this.storger.remove(vo);
-	    vo.setState(null);
+	    vo.setState("0");
 
 	}
 	

@@ -40,11 +40,11 @@ public class MiddleOrgPO implements Serializable {
 		this.driver = driver;
 		
 		for(AccountInfoPO po:assisant){
-			po.setState(3+"-"+city+"-中转中心");
+			po.setState(3+"-"+city+"-中转中心"+"-"+codeNumber);
 		}
 		
 		for(AccountInfoPO po:storger){
-			po.setState(4+"-"+city+"-中转中心");
+			po.setState(4+"-"+city+"-中转中心"+"-"+codeNumber);
 		}
 	}
 
@@ -106,23 +106,23 @@ public class MiddleOrgPO implements Serializable {
 	
 	public void addAssisant(AccountInfoPO po){
 		this.assisant.add(po);	
-		po.setState(3+"-"+city+"-中转中心");
+		po.setState(3+"-"+city+"-中转中心"+"-"+codeNumber);
 	}
 	
 	public void removeAssisant( AccountInfoPO po){
 	    this.assisant.remove(po);
-	    po.setState(null);
+	    po.setState("0");
 
 	}
 	
 	public void addStorger(AccountInfoPO po){
 		this.assisant.add(po);	
-		po.setState(4+"-"+city+"-中转中心");
+		po.setState(4+"-"+city+"-中转中心"+"-"+codeNumber);
 	}
 	
 	public void removeStorger( AccountInfoPO po){
 	    this.storger.remove(po);
-	    po.setState(null);
+	    po.setState("0");
 
 	}
 	

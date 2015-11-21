@@ -12,6 +12,7 @@ public class BussinessOrgPO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private String Mcity;//所属中转中心城市
 	private String city;//机构所在城市
 	private String codeNumber;//机构编号，3位
 	private String codeNumberOfMiddle;//所属中转中心编号，3位
@@ -21,9 +22,10 @@ public class BussinessOrgPO implements Serializable {
 	private ArrayList<DriverPO> driver;//司机信息列表
 	
 	
-	public BussinessOrgPO(String city, String codeNumber, String codeNumberOfMiddle, ArrayList<AccountInfoPO> assisant,
+	public BussinessOrgPO(String Mcity,String city, String codeNumber, String codeNumberOfMiddle, ArrayList<AccountInfoPO> assisant,
 			ArrayList<AccountInfoPO> courier, ArrayList<VehiclePO> vehicle, ArrayList<DriverPO> driver) {
 		super();
+		this.Mcity=Mcity;
 		this.city = city;
 		this.codeNumber = codeNumber;
 		this.codeNumberOfMiddle = codeNumberOfMiddle;
@@ -33,12 +35,21 @@ public class BussinessOrgPO implements Serializable {
 		this.driver = driver;
 		
 		for(AccountInfoPO po:assisant){
-			po.setState(2+"-"+city+"-中转中心");
+			po.setState(2+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 		}
 		for(AccountInfoPO po:courier){
-			po.setState(1+"-"+city+"-中转中心");
+			po.setState(1+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 		}
 	}
+	
+	public String getMcity() {
+		return Mcity;
+	}
+
+	public void setMcity(String mcity) {
+		Mcity = mcity;
+	}
+
 	public String getCity() {
 		return city;
 	}
@@ -85,23 +96,23 @@ public class BussinessOrgPO implements Serializable {
 	
 	public void addCourier(AccountInfoPO po){
 		this.courier.add(po);	
-		po.setState(2+"-"+city+"-中转中心");
+		po.setState(2+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 	}
 	
 	public void removeCourier(AccountInfoPO po){
 	    this.courier.remove(po);
-	    po.setState(null);
+	    po.setState("0");
 
 	}
 	
 	public void addAssisant(AccountInfoPO po){
 		this.assisant.add(po);	
-		po.setState(3+"-"+city+"-中转中心");
+		po.setState(3+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 	}
 	
 	public void removeAssisant(AccountInfoPO po){
 	    this.assisant.remove(po);
-	    po.setState(null);
+	    po.setState("0");
 
 	}
 	

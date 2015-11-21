@@ -9,61 +9,61 @@ public class BhclerkController {
 	
 	public String[] getVehicleList() {
 		// TODO 自动生成的方法存根
-		return bBL.getVehicleList();
+		return bBL.getVehicleList(null);
 	}
 
 
 	public VehicleVO getVehicleInfo(String codeVehicle) {
 		// TODO 自动生成的方法存根
-		return bBL.getVehicleInfo(codeVehicle);
+		return bBL.getVehicleInfo(null, codeVehicle);
 	}
 
 
 	public boolean addVehicle(VehicleVO vo) {
 		// TODO 自动生成的方法存根
-		return bBL.addVehicle(vo);
+		return bBL.addVehicle(null, vo);
 	}
 
 
 	public boolean removeVehicle(String codeVehicle) {
 		// TODO 自动生成的方法存根
-		return bBL.removeVehicle(codeVehicle);
+		return bBL.removeVehicle(null, codeVehicle);
 	}
 
 
 	public boolean changeVehicle(VehicleVO vo) {
 		// TODO 自动生成的方法存根
-		return bBL.changeVehicle(vo);
+		return bBL.changeVehicle(null, vo);
 	}
 
 
 	public String[] getDriverList() {
 		// TODO 自动生成的方法存根
-		return bBL.getDriverList();
+		return bBL.getDriverList(null);
 	}
 
 
 	public DriverVO getDriverInfo(String codeDriver) {
 		// TODO 自动生成的方法存根
-		return bBL.getDriverInfo(codeDriver);
+		return bBL.getDriverInfo(null, codeDriver);
 	}
 
 
 	public boolean addDriver(DriverVO vo) {
 		// TODO 自动生成的方法存根
-		return bBL.addDriver(vo);
+		return bBL.addDriver(null, vo);
 	}
 
 
 	public boolean removeDriver(String codeDriver) {
 		// TODO 自动生成的方法存根
-		return bBL.removeDriver(codeDriver);
+		return bBL.removeDriver(null, codeDriver);
 	}
 
 
 	public boolean changeDriver(DriverVO vo) {
 		// TODO 自动生成的方法存根
-		return bBL.changeDriver(vo);
+		return bBL.changeDriver(null, vo);
 	}
 
 }

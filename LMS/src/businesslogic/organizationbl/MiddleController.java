@@ -10,43 +10,43 @@ public class MiddleController {
 
 	public String[] getBussinessmanList() {
 		// TODO 自动生成的方法存根
-		return mBL.getBussinessHallList();
+		return mBL.getBussinessHallList(null);
 	}
 
 
 	public boolean addBussinessman(long ID) {
 		// TODO 自动生成的方法存根
-		return mBL.addBussinessman(ID);
+		return mBL.addBussinessman(null, ID);
 	}
 
 	
 	public boolean removeBussinessman(long ID) {
 		// TODO 自动生成的方法存根
-		return mBL.removeBussinessman(ID);
+		return mBL.removeBussinessman(null, ID);
 	}
 
 	
 	public String[] getStorgerList() {
 		// TODO 自动生成的方法存根
-		return mBL.getStorgerList();
+		return mBL.getStorgerList(null);
 	}
 
 	
 	public boolean addStorger(long ID) {
 		// TODO 自动生成的方法存根
-		return mBL.addStorger(ID);
+		return mBL.addStorger(null, ID);
 	}
 
 
 	public boolean removeStorger(long ID) {
 		// TODO 自动生成的方法存根
-		return mBL.removeStorger(ID);
+		return mBL.removeStorger(null, ID);
 	}
 
 	
 	public String[] getBussinessHallList() {
 		// TODO 自动生成的方法存根
-		return mBL.getBussinessHallList();
+		return mBL.getBussinessHallList(null);
 	}
 
 
@@ -58,13 +58,13 @@ public class MiddleController {
 
 	public boolean changeCity(String city) {
 		// TODO 自动生成的方法存根
-		return mBL.changeCity(city);
+		return mBL.changeCity(null, city);
 	}
 
 
 	public boolean addMiddleOrg(MiddleOrgVO vo) {
 		// TODO 自动生成的方法存根
-		return mBL.addMiddleOrg(vo);
+		return mBL.addMiddleOrg(null, vo);
 	}
 
 

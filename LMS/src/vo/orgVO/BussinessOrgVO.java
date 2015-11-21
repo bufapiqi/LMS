@@ -11,6 +11,7 @@ import vo.accountVO.AccountNumberVO;
  *
  */
 public class BussinessOrgVO {
+	private String Mcity;//所属中转中心城市
 	private String city;//机构所在城市
 	private String codeNumber;//机构编号，3位
 	private String codeNemberOfMiddle;//所属中转中心编号；3位
@@ -21,10 +22,11 @@ public class BussinessOrgVO {
 	
 
 
-	public BussinessOrgVO(String city, String codeNumber, String codeNemberOfMiddle,
+	public BussinessOrgVO(String Mcity,String city, String codeNumber, String codeNemberOfMiddle,
 			ArrayList<AccountNumberVO> assisant, ArrayList<AccountNumberVO> courier, ArrayList<VehicleVO> vehicle,
 			ArrayList<DriverVO> driver) {
 		super();
+		this.Mcity=Mcity;
 		this.city = city;
 		this.codeNumber = codeNumber;
 		this.codeNemberOfMiddle = codeNemberOfMiddle;
@@ -34,10 +36,10 @@ public class BussinessOrgVO {
 		this.driver = driver;
 		
 		for(AccountNumberVO vo:assisant){
-			vo.setState(2+"-"+city+"-营业厅");
+			vo.setState(2+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 		}
 		for(AccountNumberVO vo:courier){
-			vo.setState(1+"-"+city+"-营业厅");
+			vo.setState(1+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 		}
 	}
 
@@ -100,23 +102,23 @@ public class BussinessOrgVO {
 
 	public void addAssisant(AccountNumberVO vo){
 		this.assisant.add(vo);	
-		vo.setState(2+"-"+city+"-营业厅");
+		vo.setState(2+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 	}
 	
 	public void removeAssisant( AccountNumberVO vo){
 	    this.assisant.remove(vo);
-	    vo.setState(null);
+	    vo.setState("0");
 
 	}
 	
 	public void addCourier(AccountNumberVO vo){
 		this.courier.add(vo);	
-		vo.setState(2+"-"+city+"-营业厅");
+		vo.setState(2+"-"+Mcity+"-"+city+"-营业厅"+"-"+Mcity+"-"+city);
 	}
 	
 	public void removeCourier( AccountNumberVO vo){
 	    this.courier.remove(vo);
-	    vo.setState(null);
+	    vo.setState("0");
 
 	}
 	

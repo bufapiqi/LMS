@@ -1,8 +1,6 @@
 package dataservice.organizationdataservice;
 
-import java.rmi.Remote;
-
-public interface FinanceOrgDataSer extends Remote{
+public interface FinanceOrgDataSer {
 	
 	/**
 	 * 查找并返回财务人员列表
