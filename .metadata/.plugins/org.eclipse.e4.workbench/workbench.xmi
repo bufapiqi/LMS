@@ -70,9 +70,8 @@
           <tags>persp.newWizSC:org.eclipse.m2e.core.wizards.Maven2ProjectWizard</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_-K6owY-lEeWiGp_PLRlZdA" selectedElement="_-K6owo-lEeWiGp_PLRlZdA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_-K6owY-lEeWiGp_PLRlZdA" selectedElement="_-K6ox4-lEeWiGp_PLRlZdA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_-K6owo-lEeWiGp_PLRlZdA" elementId="topLeft" containerData="1979" selectedElement="_-K6oxI-lEeWiGp_PLRlZdA">
-              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_-K6ow4-lEeWiGp_PLRlZdA" elementId="org.eclipse.ui.navigator.ProjectExplorer" toBeRendered="false" ref="_-J3f4I-lEeWiGp_PLRlZdA"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_-K6oxI-lEeWiGp_PLRlZdA" elementId="org.eclipse.ui.views.ResourceNavigator" ref="_-J4uAI-lEeWiGp_PLRlZdA"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_-K6oxY-lEeWiGp_PLRlZdA" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_-J4uAY-lEeWiGp_PLRlZdA"/>
@@ -134,6 +133,7 @@
       <children xsi:type="basic:PartStack" xmi:id="_-Ju9AY-lEeWiGp_PLRlZdA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_gqmvoJAgEeWqbMg4dktCOA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_fVBkIJAdEeWdFJzoTVzgJQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MiddleOrgBLSer.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MiddleOrgBLSer.java&quot; partName=&quot;MiddleOrgBLSer.java&quot; title=&quot;MiddleOrgBLSer.java&quot; tooltip=&quot;LMS/src/businesslogicservice/organizationblservice/MiddleOrgBLSer.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LMS/src/businesslogicservice/organizationblservice/MiddleOrgBLSer.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1920&quot; selectionTopPixel=&quot;1323&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -159,10 +159,12 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_gqmvoJAgEeWqbMg4dktCOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GetAllPayDataSerImpl.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GetAllPayDataSerImpl.java&quot; partName=&quot;GetAllPayDataSerImpl.java&quot; title=&quot;GetAllPayDataSerImpl.java&quot; tooltip=&quot;LMSservice/src/rmiService/finance/GetAllPayDataSerImpl.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LMSservice/src/rmiService/finance/GetAllPayDataSerImpl.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;149&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GetAllPayDataSerImpl.java&quot; partName=&quot;GetAllPayDataSerImpl.java&quot; title=&quot;GetAllPayDataSerImpl.java&quot; tooltip=&quot;LMSservice/src/rmiService/finance/GetAllPayDataSerImpl.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LMSservice/src/rmiService/finance/GetAllPayDataSerImpl.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;523&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -179,8 +181,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view LINK_NAVIGATOR_TO_EDITOR=&quot;0&quot; sorter=&quot;1&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;*.class&quot; isEnabled=&quot;false&quot;/>&#xD;&#xA;&lt;filter element=&quot;RemoteSystemsConnections&quot; isEnabled=&quot;true&quot;/>&#xD;&#xA;&lt;filter element=&quot;RemoteSystemsTempFiles&quot; isEnabled=&quot;true&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot; isEnabled=&quot;false&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;/LMS&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/businesslogicservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/businesslogicservice/accountblservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/businesslogicservice/organizationblservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/dataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/dataservice/organizationdataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/po&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMS/src/po/accountPO&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/dataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/dataservice/accountdataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/dataservice/financedataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/dataservice/organizationdataservice&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/rmiService&quot;/>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/rmiService/finance&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;/LMSservice/src/rmiService/finance/GetAllPayDataSerImpl.java&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_JrODMI-mEeWiGp_PLRlZdA" elementId="org.eclipse.ui.views.ResourceNavigator">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -271,7 +271,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-CfFgI-lEeWiGp_PLRlZdA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_LgjMsJAgEeWqbMg4dktCOA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_9ydsqo-lEeWiGp_PLRlZdA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_tpTasJAgEeWZW7YNv3qwMA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_9ydsqo-lEeWiGp_PLRlZdA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-CfskI-lEeWiGp_PLRlZdA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -301,7 +301,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-CfslI-lEeWiGp_PLRlZdA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_LgmQAJAgEeWqbMg4dktCOA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9ydFp4-lEeWiGp_PLRlZdA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_tpYTMJAgEeWZW7YNv3qwMA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_9ydFp4-lEeWiGp_PLRlZdA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-CfslY-lEeWiGp_PLRlZdA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
