@@ -33,14 +33,15 @@ public class GetAllPayDataSerImpl extends UnicastRemoteObject implements GetAllP
 	public ArrayList<PaymentPO> getAllPay(String start, String end)  throws RemoteException{
 		// TODO 自动生成的方法存根
 		sql="SELECT * from 付款单 where datediff(d,start, date)>0";
-		
+		ArrayList<PaymentPO> ArrPo = new ArrayList<PaymentPO>();
 		try {
 			Class.forName(DRIVER);
 			Connection connection=DriverManager.getConnection(URL, USER, PASSWORD);
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			ResultSet resultSet=preparedStatement.executeQuery();
 			while(resultSet.next()){
-				resultSet.getString(1);
+				PaymentPO po = new PaymentPO(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getDouble(5), resultSet.getString(6),resultSet.getString(7),resultSet.getString(8),resultSet.getString(9));
+				ArrPo.add(po);
 			}
 		} catch (ClassNotFoundException e) {
 			// TODO 自动生成的 catch 块
@@ -49,7 +50,7 @@ public class GetAllPayDataSerImpl extends UnicastRemoteObject implements GetAllP
 			// TODO 自动生成的 catch 块
 			e.printStackTrace();
 		}
-		return null;
+		return ArrPo;
 	}
 
 
